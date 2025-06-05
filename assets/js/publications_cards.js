@@ -1,7 +1,7 @@
 // BRIGHT Lab
 // This files contains RSS parser for the publications cards
 
-const rssUrl = "https://pubmed.ncbi.nlm.nih.gov/rss/search/1vwc2FOtmnQT3rSGIODi61RguRgefbx_huzySeAzm3-8zecElm/?limit=15&utm_campaign=pubmed-2&fc=20250509155558"
+const rssUrl = "https://pubmed.ncbi.nlm.nih.gov/rss/search/10OYJAKqY6ZMlI1AFarvCp2vwSScVBahVvF5SppfIcR8i28Qdz/?limit=20&utm_campaign=pubmed-2&fc=20250604172006"
 
 
 function getYear(date) {

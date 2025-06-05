@@ -50,10 +50,9 @@ const teamMembers = [
             suivie d'une maîtrise en neurosciences, au cours de laquelle elle a développé un intérêt pour les neurosciences computationnelles 
             et les analyses en neuroimagerie. Elle poursuit actuellement un doctorat en sciences psychiatriques et d’addictologie à l'Université 
             de Montréal, en se concentrant sur l'utilisation de la neuroimagerie pour prédire le pronostic des troubles de l'alimentation.`,
-            en: `Clara El Khantour est titulaire d'un baccalauréat en neurosciences cognitives, suivie d'une maîtrise en neurosciences, au cours de 
-            laquelle elle a développé un intérêt pour les neurosciences computationnelles et les analyses en neuroimagerie. Elle poursuit actuellement 
-            un doctorat en sciences psychiatriques et d’addictologie à l'Université de Montréal, en se concentrant sur l'utilisation de la neuroimagerie 
-            pour prédire le pronostic dans les troubles de la conduite alimentaire.`
+            en: `Clara El Khantour holds a bachelor's degree in cognitive neuroscience, followed by a master's in neuroscience, during which she 
+            developed an interest in computational neuroscience and neuroimaging analyses. She is currently pursuing a PhD in psychiatry at the 
+            Université de Montréal, focusing on the use of neuroimaging to predict the prognosis in eating disorders.`
         }
     },
     {
