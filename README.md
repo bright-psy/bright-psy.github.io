@@ -1,1 +1,0 @@
-# bright-psy.github.io

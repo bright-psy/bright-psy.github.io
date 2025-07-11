@@ -1,0 +1,158 @@
+/* === Carousel Wrapper === */
+.publications-carousel-container {
+    position: relative;
+    width: 100%;
+    min-height: 850px; /* adapté à une carte de 600px * 1.2 = 720px */
+    margin: 40px 0;
+    overflow: visible; /* ✅ Affiche ce qui dépasse */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publications-carousel {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.publications-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px; /* ✅ Donne une vraie hauteur pour contenir les cartes */
+}
+
+/* === Individual Card === */
+.publication-card {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: all 0.5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+/* Active / Center / Side Cards */
+.publication-card.active {
+    z-index: 10;
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.publication-card.prev,
+.publication-card.next {
+    opacity: 0.7;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    z-index: 5;
+}
+
+/* Card Content */
+.publication-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.publication-authors {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.pub-source {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    margin-top: auto;
+}
+
+.pub-sep {
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 8px 0;
+}
+
+/* === Carousel Arrows === */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    transition: background 0.2s ease;
+}
+
+.carousel-control:hover {
+    background-color: #eee;
+}
+
+.carousel-control.prev {
+    left: 5%;
+}
+
+.carousel-control.next {
+    right: 5%;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .publication-card {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .publication-title {
+        font-size: 1rem;
+    }
+
+    .publication-authors,
+    .pub-source {
+        font-size: 0.9rem;
+    }
+
+    .carousel-control {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .carousel-control.prev {
+        left: 2%;
+    }
+
+    .carousel-control.next {
+        right: 2%;
+    }
+}
