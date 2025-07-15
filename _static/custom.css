@@ -1,0 +1,11 @@
+.rss-publication {
+  font-size: 14px;      
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #333;           
+}
+
+.rss-publication h4 {
+  font-size: 1rem;       
+  margin-bottom: 0.3rem;
+}

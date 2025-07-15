@@ -91,7 +91,7 @@ kernelspec:
 ```{code-cell} python
 :tags: [remove-input]
 
-from IPython.display import display, Markdown
+from IPython.display import display, Markdown, HTML
 import feedparser
 from dateutil import parser as dateparser
 import re
@@ -138,14 +138,16 @@ for entry in feed.entries:
 
         link_line = f"🔗 [https://doi.org/{doi}](https://doi.org/{doi})" if doi else "🔗 DOI not found"
 
-        display(Markdown(
-f"""### {tag}  
-**{authors}**  
-{title}  
-*{journal}*, {year}  
-{link_line}  
----
+        display(HTML(
+f"""
+<div class="rss-publication">
+<h4>{tag}</h4>
+<p><strong>{authors}</strong><br>
+{title}<br>
+<em>{journal}</em>, {year}<br>
+<a href="https://doi.org/{doi}" target="_blank">🔗 https://doi.org/{doi}</a></p>
+</div>
 """
-        ))
+))
     except Exception as e:
         display(Markdown(f"⚠️ Error displaying entry: {e}"))

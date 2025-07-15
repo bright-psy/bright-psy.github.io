@@ -11,11 +11,13 @@ Welcome to the **BRIGHT Lab**, based at CHU Sainte-Justine and affiliated with t
 
 > The lab is focused on the study of the genetic and neural basis of psychiatric disorders, with a particular emphasis on the use of genetic and neuroimaging data to identify the biological mechanisms underlying these disorders. We are also interested in the development of new methods for the analysis of genetic and neuroimaging data, and in the application of these methods to the study of psychiatric disorders.
 
+<p>
+  Principal investigator of the BRIGHT Lab: <a href="https://www.chusj.org/fr/Biographie?id=4a42981c-6b86-434c-ad8a-bb6cc78968b5&lang=" target="_blank">Clara Moreau</a>.
+</p>
+
 ---
 
 ## Funding
-
-Our work is made possible thanks to generous support from our funding partners.
 
 ---
 
