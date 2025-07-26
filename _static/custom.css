@@ -12,52 +12,42 @@
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  color: #111; /* Par défaut pour le mode clair */
+  color: #111;
 }
-
 html[data-theme="dark"] .rss-publication {
-  color: #eee; /* Texte bien visible en mode sombre */
+  color: #eee;
 }
-
 .rss-publication h4 {
   font-size: 1rem;
   margin-bottom: 0.3rem;
   color: #000;
 }
-
 html[data-theme="dark"] .rss-publication h4 {
   color: #fff;
 }
-
 .rss-publication a {
   color: #0066cc;
   text-decoration: none;
 }
-
 html[data-theme="dark"] .rss-publication a {
-  color: #66aaff; /* Lien clair en mode sombre */
+  color: #66aaff;
 }
-
 .rss-publication a:hover {
   text-decoration: underline;
 }
-
 .rss-publication .rss-date {
   font-size: 0.85rem;
   color: #555;
   margin-bottom: 0.5rem;
 }
-
 html[data-theme="dark"] .rss-publication .rss-date {
   color: #ccc;
 }
-
 
 /* Transparent background for code cells */
 .cell.tag_remove-input {
   background-color: transparent !important;
 }
-
 div.cell div.output_wrapper,
 div.cell div.output,
 div.cell div.inner_cell {
@@ -79,7 +69,6 @@ div.cell div.inner_cell {
   transition: background-color 0.2s;
   margin-bottom: 1.5rem;
 }
-
 .view-all-button:hover {
   background-color: var(--card-border);
 }
@@ -87,6 +76,7 @@ div.cell div.inner_cell {
 /* News Cards */
 .news-card-standard {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
@@ -96,11 +86,29 @@ div.cell div.inner_cell {
   margin-bottom: 2rem;
   background-color: var(--card-bg);
   box-shadow: 2px 2px 8px var(--card-shadow);
-  min-height: 220px;
+  min-height: 0;
 }
-
 .news-text {
-  flex: 1;
+  flex: 1 1 200px;
+}
+.news-image-container {
+  flex: 0 0 250px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-border);
+}
+.news-img-standard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
 }
 
 .latest-news-wrapper {
@@ -109,7 +117,6 @@ div.cell div.inner_cell {
   gap: 2rem;
   margin: 2rem 0;
 }
-
 .news-topic-link {
   display: inline-block;
   background-color: var(--card-highlight);
@@ -121,57 +128,30 @@ div.cell div.inner_cell {
   font-size: 0.8rem;
   margin-bottom: 0.4rem;
 }
-
 .news-topic-link:hover {
   opacity: 0.85;
 }
-
 .news-date {
   font-size: 0.85rem;
   color: var(--card-muted);
   margin-bottom: 0.4rem;
 }
-
 .news-title {
   font-size: 1.4rem;
   margin: 0.3rem 0 0.8rem;
   color: var(--card-text);
 }
-
 .news-description {
   font-size: 1rem;
   color: var(--card-text);
   margin-bottom: 0.8rem;
 }
-
 .news-link a {
   color: var(--pst-color-link);
   text-decoration: none;
 }
-
 .news-link a:hover {
   text-decoration: underline;
-}
-
-.news-image-container {
-  flex-shrink: 0;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--card-border);
-}
-
-.news-img-standard {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center;
-  display: block;
-  border-radius: 8px;
 }
 
 /* Team & Alumni Cards */
@@ -191,7 +171,6 @@ div.cell div.inner_cell {
   background-color: var(--card-bg);
   color: var(--card-text);
 }
-
 .card img {
   width: 180px;
   height: 180px;
@@ -199,7 +178,6 @@ div.cell div.inner_cell {
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
-
 .card small {
   color: var(--card-muted);
   font-size: 12px;
@@ -217,7 +195,6 @@ div.cell div.inner_cell {
   width: 100%;
   height: 100%;
 }
-
 .modal-content {
   background-color: var(--card-bg);
   color: var(--card-text);
@@ -227,13 +204,25 @@ div.cell div.inner_cell {
   margin: 5% auto;
   border: 1px solid var(--card-border);
 }
-
 .modal-content h3 {
   margin-top: 0;
 }
-
 .modal-close {
   float: right;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .news-card-standard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-image-container {
+    width: 100%;                /* occupe tout l’espace horizontal */
+    max-width: 250px;           /* mais ne dépasse pas la taille standard */
+    aspect-ratio: 1 / 1;        /* carré constant */
+    margin: 1rem auto 0;        /* centré sous le texte */
+  }
 }
