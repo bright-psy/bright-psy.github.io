@@ -35,9 +35,9 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom_carousel.css?v=8e9dd52f" />
-    <link rel="stylesheet" type="text/css" href="_static/publication_modal.css?v=1b9a2f42" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_carousel.css?v=4219f3fe" />
+    <link rel="stylesheet" type="text/css" href="_static/publication_modal.css?v=cdf20535" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3907d8d6" />
     <link rel="stylesheet" type="text/css" href="_static/css/publication_modal.css?v=ecef1c10" />
     <link rel="stylesheet" type="text/css" href="_static/css/publication_card.css?v=ed99ed3c" />
     <link rel="stylesheet" type="text/css" href="_static/css/header.css?v=f019e535" />
@@ -69,13 +69,16 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'team';</script>
+    <script src="_static/lastest_news_embed.js?v=ff75844a"></script>
+    <script src="_static/news_data.js?v=f5ccbd71"></script>
     <script src="_static/publication_modal.js?v=e7bc810e"></script>
     <script src="_static/publications_carousel.js?v=e74c6f3e"></script>
+    <script src="_static/news_filter.js?v=1a9a3945"></script>
     <script src="_static/custom_carousel.js?v=a2613bd1"></script>
     <link rel="icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Contact" href="contact.html" />
+    <link rel="next" title="News" href="news.html" />
     <link rel="prev" title="Publications" href="publications.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -198,6 +201,7 @@
 <li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
 </ul>
 
@@ -370,17 +374,21 @@ document.write(`
 <style>
 .card {
   width: 220px;
-  min-height: 380px; /* Hauteur uniforme */
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ddd;
+  border: 1px solid var(--pst-color-border);
   border-radius: 12px;
   padding: 1rem;
+  background-color: var(--pst-color-surface);
   box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
   text-align: center;
   font-family: sans-serif;
+  font-size: 14px;
+  color: var(--pst-color-text-base);
 }
+
 .card img {
   width: 180px;
   height: 180px;
@@ -388,6 +396,12 @@ document.write(`
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
+
+.card small {
+  color: var(--pst-color-text-muted);
+  font-size: 12px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -397,16 +411,21 @@ document.write(`
   left: 0; top: 0;
   width: 100%; height: 100%;
 }
+
 .modal-content {
-  background: white;
+  background: var(--pst-color-surface);
+  color: var(--pst-color-text-base);
   padding: 1rem;
   border-radius: 8px;
   max-width: 600px;
   margin: 5% auto;
+  border: 1px solid var(--pst-color-border);
 }
+
 .modal-content h3 {
   margin-top: 0;
 }
+
 .modal-close {
   float: right;
   font-weight: bold;
@@ -417,7 +436,10 @@ document.write(`
         <div class="card">
             <img src="_static/images/cmoreau.jpeg" alt="Clara Moreau"/>
             <strong>Clara Moreau</strong><br/>
-            <em>M.Sc., Ph.D (Principal Investigator)</em><br/><br/>
+            <em>M.Sc., Ph.D (Principal Investigator)</em><br/>
+            
+            
+            <br/>
             <a href='https://www.linkedin.com/in/clara-a-moreau-b44b6858/' target='_blank'>🔗 LinkedIn</a> <a href='https://scholar.google.com/citations?user=tkN9j_cAAAAJ' target='_blank'>🔗 Scholar</a> <br/>
             <button onclick="toggleModal('clara_moreau_modal')">📘 Bio</button>
         </div>
@@ -432,7 +454,10 @@ document.write(`
         <div class="card">
             <img src="_static/images/pbergeret.jpeg" alt="Pierre Bergeret"/>
             <strong>Pierre Bergeret</strong><br/>
-            <em>Ph.D. Student</em><br/><br/>
+            <em>M.Sc, Ph.D. Student</em><br/>
+            PhD of Psychiatric Sciences and Addictology<br/>
+            University of Montréal<br/>
+            <br/>
             <a href='https://www.linkedin.com/in/pierrebergeret' target='_blank'>🔗 LinkedIn</a> <a href='https://github.com/pbergeret12' target='_blank'>🔗 GitHub</a> <br/>
             <button onclick="toggleModal('pierre_bergeret_modal')">📘 Bio</button>
         </div>
@@ -447,8 +472,11 @@ document.write(`
         <div class="card">
             <img src="_static/images/celkhantour.jpeg" alt="Clara El Khantour"/>
             <strong>Clara El Khantour</strong><br/>
-            <em>Ph.D. Student</em><br/><br/>
-            <a href='https://www.linkedin.com/in/clara-el-khantour-32706321a/' target='_blank'>🔗 LinkedIn</a> <br/>
+            <em>M.Sc, Ph.D. Student</em><br/>
+            PhD of Psychiatric Sciences and Addictology<br/>
+            University of Montréal<br/>
+            <br/>
+            <a href='https://www.linkedin.com/in/clara-el-khantour-32706321a/' target='_blank'>🔗 LinkedIn</a> <a href='https://github.com/claraElk' target='_blank'>🔗 GitHub</a> <br/>
             <button onclick="toggleModal('clara_el_khantour_modal')">📘 Bio</button>
         </div>
         <div id="clara_el_khantour_modal" class="modal" onclick="toggleModal('clara_el_khantour_modal')">
@@ -458,39 +486,11 @@ document.write(`
                 <p>Clara El Khantour holds a bachelor's degree in cognitive neuroscience, followed by a master's in neuroscience, during which she developed an interest in computational neuroscience and neuroimaging analyses. She is currently pursuing a PhD in psychiatry at the Université de Montréal, focusing on the use of neuroimaging to predict the prognosis in eating disorders.</p>
             </div>
         </div>
-        </div><h2>Interns</h2><div style='display: flex; flex-wrap: wrap; gap: 1.5rem;'>
-        <div class="card">
-            <img src="_static/images/seann_wang.jpeg" alt="Seann Wang"/>
-            <strong>Seann Wang</strong><br/>
-            <em>Intern</em><br/><br/>
-            <a href='https://www.linkedin.com/in/seann-wang-a72305179/' target='_blank'>🔗 LinkedIn</a> <a href='https://github.com/wangseann' target='_blank'>🔗 GitHub</a> <br/>
-            <button onclick="toggleModal('seann_wang_modal')">📘 Bio</button>
-        </div>
-        <div id="seann_wang_modal" class="modal" onclick="toggleModal('seann_wang_modal')">
-            <div class="modal-content" onclick="event.stopPropagation()">
-                <span class="modal-close" onclick="toggleModal('seann_wang_modal')">✖</span>
-                <h3>Seann Wang</h3>
-                <p>Seann Wang is a research intern at the BRIGHT Lab at CHU Sainte Justine. He works with other members of the lab and the Enigma Resting-State group. He holds a B.Sc. in Behavioural Neuroscience from the University of British Columbia and has conducted research across multiple institutions, including OIST (Okinawa, Japan) and ICORD (UBC, Vancouver, British Columbia). Recently, he has been working with members of Enigma to test and quality assess the use of HALFpipe, and develop an easy-to-use codebase to evaluate denoising strategies applied by HALFpipe. He is particularly interested in big data approaches to neuroscience, integrating information-theoretic approaches and multimodal data to improve decoding of mental states, as well as machine learning applications for biomarker discovery in psychiatric disease. Outside of the lab, Seann loves to play music, traveling, and enjoying Montreal's beautiful sunny days.</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="_static/images/clara_maria.jpeg" alt="Clara Maria Bridi"/>
-            <strong>Clara Maria Bridi</strong><br/>
-            <em>Intern</em><br/><br/>
-            <a href='https://www.linkedin.com/in/clara-maria-bridi-ab7674271/' target='_blank'>🔗 LinkedIn</a> <br/>
-            <button onclick="toggleModal('clara_maria_bridi_modal')">📘 Bio</button>
-        </div>
-        <div id="clara_maria_bridi_modal" class="modal" onclick="toggleModal('clara_maria_bridi_modal')">
-            <div class="modal-content" onclick="event.stopPropagation()">
-                <span class="modal-close" onclick="toggleModal('clara_maria_bridi_modal')">✖</span>
-                <h3>Clara Maria Bridi</h3>
-                <p>Clara Maria Bridi is a medical student at the Université de Montréal. She is currently doing a research internship at the BRIGHT lab due to her interest in adolescent medicine and eating disorders.</p>
-            </div>
-        </div>
         </div></div></div>
 </div>
-</section>
+<div style="margin-top: 2rem;">
+  <a href="alumni.html" class="view-all-button">They worked with us: see the alumni</a>
+</div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -533,11 +533,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="contact.html"
+       href="news.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Contact</p>
+        <p class="prev-next-title">News</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

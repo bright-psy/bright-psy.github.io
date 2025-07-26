@@ -42,7 +42,9 @@ team_data = [
         "members": [
             {
                 "name": "Pierre Bergeret",
-                "title": "Ph.D. Student",
+                "title": "M.Sc, Ph.D. Student",
+                "program": "PhD of Psychiatric Sciences and Addictology",
+                "university": "University of Montréal",
                 "image": "pbergeret.jpeg",
                 "links": {
                     "LinkedIn": "https://www.linkedin.com/in/pierrebergeret",
@@ -52,36 +54,15 @@ team_data = [
             },
             {
                 "name": "Clara El Khantour",
-                "title": "Ph.D. Student",
+                "title": "M.Sc, Ph.D. Student",
+                "program": "PhD of Psychiatric Sciences and Addictology",
+                "university": "University of Montréal",
                 "image": "celkhantour.jpeg",
                 "links": {
-                    "LinkedIn": "https://www.linkedin.com/in/clara-el-khantour-32706321a/"
+                    "LinkedIn": "https://www.linkedin.com/in/clara-el-khantour-32706321a/",
+                    "GitHub": "https://github.com/claraElk"
                 },
                 "bio": """Clara El Khantour holds a bachelor's degree in cognitive neuroscience, followed by a master's in neuroscience, during which she developed an interest in computational neuroscience and neuroimaging analyses. She is currently pursuing a PhD in psychiatry at the Université de Montréal, focusing on the use of neuroimaging to predict the prognosis in eating disorders."""
-            }
-        ]
-    },
-    {
-        "section": "Interns",
-        "members": [
-            {
-                "name": "Seann Wang",
-                "title": "Intern",
-                "image": "seann_wang.jpeg",
-                "links": {
-                    "LinkedIn": "https://www.linkedin.com/in/seann-wang-a72305179/",
-                    "GitHub": "https://github.com/wangseann"
-                },
-                "bio": """Seann Wang is a research intern at the BRIGHT Lab at CHU Sainte Justine. He works with other members of the lab and the Enigma Resting-State group. He holds a B.Sc. in Behavioural Neuroscience from the University of British Columbia and has conducted research across multiple institutions, including OIST (Okinawa, Japan) and ICORD (UBC, Vancouver, British Columbia). Recently, he has been working with members of Enigma to test and quality assess the use of HALFpipe, and develop an easy-to-use codebase to evaluate denoising strategies applied by HALFpipe. He is particularly interested in big data approaches to neuroscience, integrating information-theoretic approaches and multimodal data to improve decoding of mental states, as well as machine learning applications for biomarker discovery in psychiatric disease. Outside of the lab, Seann loves to play music, traveling, and enjoying Montreal's beautiful sunny days."""
-            },
-            {
-                "name": "Clara Maria Bridi",
-                "title": "Intern",
-                "image": "clara_maria.jpeg",
-                "links": {
-                    "LinkedIn": "https://www.linkedin.com/in/clara-maria-bridi-ab7674271/"
-                },
-                "bio": """Clara Maria Bridi is a medical student at the Université de Montréal. She is currently doing a research internship at the BRIGHT lab due to her interest in adolescent medicine and eating disorders."""
             }
         ]
     }
@@ -91,17 +72,21 @@ html = """
 <style>
 .card {
   width: 220px;
-  min-height: 380px; /* Hauteur uniforme */
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ddd;
+  border: 1px solid var(--pst-color-border);
   border-radius: 12px;
   padding: 1rem;
+  background-color: var(--pst-color-surface);
   box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
   text-align: center;
   font-family: sans-serif;
+  font-size: 14px;
+  color: var(--pst-color-text-base);
 }
+
 .card img {
   width: 180px;
   height: 180px;
@@ -109,6 +94,12 @@ html = """
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
+
+.card small {
+  color: var(--pst-color-text-muted);
+  font-size: 12px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -118,16 +109,21 @@ html = """
   left: 0; top: 0;
   width: 100%; height: 100%;
 }
+
 .modal-content {
-  background: white;
+  background: var(--pst-color-surface);
+  color: var(--pst-color-text-base);
   padding: 1rem;
   border-radius: 8px;
   max-width: 600px;
   margin: 5% auto;
+  border: 1px solid var(--pst-color-border);
 }
+
 .modal-content h3 {
   margin-top: 0;
 }
+
 .modal-close {
   float: right;
   font-weight: bold;
@@ -144,11 +140,17 @@ for group in team_data:
         links = "".join([f"<a href='{url}' target='_blank'>🔗 {name}</a> " for name, url in member["links"].items()])
         bio_id = member["name"].replace(" ", "_").lower() + "_modal"
         image_path = f"_static/images/{member['image']}"
+        program_html = f"{member['program']}<br/>" if 'program' in member else ""
+        university_html = f"{member['university']}<br/>" if 'university' in member else ""
+
         html += f"""
         <div class="card">
             <img src="{image_path}" alt="{member['name']}"/>
             <strong>{member['name']}</strong><br/>
-            <em>{member['title']}</em><br/><br/>
+            <em>{member['title']}</em><br/>
+            {program_html}
+            {university_html}
+            <br/>
             {links}<br/>
             <button onclick="toggleModal('{bio_id}')">📘 Bio</button>
         </div>
@@ -163,3 +165,15 @@ for group in team_data:
     html += "</div>"
 
 display(HTML(html))
+```
+
+
+```{code-cell} html
+:tags: [remove-input]
+```
+
+<div style="margin-top: 2rem;">
+  <a href="alumni.html" class="view-all-button">They worked with us: see the alumni</a>
+</div>
+
+

@@ -2,12 +2,14 @@
 
 ```{code-cell} html
 :tags: [remove-input]
-<link rel="stylesheet" type="text/css" href="_static/custom.css">
+<link rel="stylesheet" href="_static/custom.css?v=2">
+<script src="_static/news_data.js"></script>
+<script src="_static/latest_news_embed.js"></script>
 ```
 
 ![BRIGHT Lab at CHU Sainte-Justine](_static/images/chu_st_justine.jpg)
 
-Welcome to the **BRIGHT Lab**, based at CHU Sainte-Justine and affiliated with the Université de Montréal.
+Welcome to the **BRIGHT Lab**, located at the research center of CHU Sainte-Justine and affiliated with the University of Montréal.
 
 > The lab is focused on the study of the genetic and neural basis of psychiatric disorders, with a particular emphasis on the use of genetic and neuroimaging data to identify the biological mechanisms underlying these disorders. We are also interested in the development of new methods for the analysis of genetic and neuroimaging data, and in the application of these methods to the study of psychiatric disorders.
 
@@ -16,6 +18,10 @@ Welcome to the **BRIGHT Lab**, based at CHU Sainte-Justine and affiliated with t
 </p>
 
 ---
+
+## Latest News
+
+<div id="latest-news-container" class="latest-news-wrapper"></div>
 
 ## Funding
 

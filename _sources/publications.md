@@ -97,7 +97,7 @@ from dateutil import parser as dateparser
 import re
 import html
 
-rss_url = "https://pubmed.ncbi.nlm.nih.gov/rss/search/10OYJAKqY6ZMlI1AFarvCp2vwSScVBahVvF5SppfIcR8i28Qdz/?limit=20"
+rss_url = "https://pubmed.ncbi.nlm.nih.gov/rss/search/1b_xvYg-6HN0FKdpXW1N__SKCt4EGO7EaY44wp81q6vp5tMsAO/?limit=20&utm_campaign=pubmed-2&fc=20250724150114"
 feed = feedparser.parse(rss_url)
 
 def format_authors(authors_list):
