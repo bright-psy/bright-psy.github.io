@@ -1,5 +1,16 @@
 const NEWS_DATA = [
   {
+    topic: "media",
+    date: "2025-07-28",
+    title: "Clara Moreau interviewed by CHU Sainte-Justine on our research into restrictive eating disorders.",
+    description: `Clara Moreau discussed our findings on disorder-specific brain alterations in children with anorexia or ARFID, and presented upcoming research on brain recovery and relapse risk.`,
+    link: {
+      url: "https://recherche.chusj.org/fr/Calendrier-et-salle-de-presse/Nouvelles/2025/Troubles-alimentaires-restrictifs-chez-les-enfants",
+      label: "Read the article (in french)"
+    },
+    image: "_static/images/cmoreau.jpeg"
+  },
+  {
     topic: "grants",
     date: "2025-07-18",
     title: "Clara El Khantour awarded the CHU Sainte-Justine Foundation and the Roberto Araya Scholarships!",
