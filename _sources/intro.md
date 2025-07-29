@@ -1,3 +1,9 @@
+---
+title: "BRIGHT Lab — Clara Moreau"
+description: "The BRIGHT Lab, led by Clara Moreau, focuses on brain research using genetics and neuroimaging to understand psychiatric disorders."
+keywords: ["BRIGHT Lab", "Clara Moreau", "brain research", "genetics", "neuroimaging", "psychiatric disorders", "University of Montreal"]
+---
+
 # BRIGHT | Brain Research using Imaging Genetics in Human Transdiagnostically
 
 ```{code-cell} html
