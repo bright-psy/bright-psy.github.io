@@ -9,11 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const latest = sorted.slice(0, 3);
 
   latest.forEach(entry => {
-    const card = createIntroNewsCard(entry);  // 🔸 Nouveau nom
+    const card = createIntroNewsCard(entry);  
     container.appendChild(card);
   });
 
-  // ✅ Fonction renommée clairement et définie une seule fois
   function createIntroNewsCard(entry) {  
     const card = document.createElement('div');
     card.className = 'news-card-standard';

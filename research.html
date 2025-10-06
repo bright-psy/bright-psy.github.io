@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>RESEARCH FOCUS &#8212; BRIGHT Lab</title>
+    <title>Research focus &#8212; BRIGHT Lab</title>
   
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
@@ -28,24 +28,27 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom_carousel.css?v=4219f3fe" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_font.css?v=cf2e60c3" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_light.css?v=cff7a068" />
+    <link rel="stylesheet" type="text/css" href="_static/team.css?v=15a24403" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=0d4a4c04" />
     <link rel="stylesheet" type="text/css" href="_static/publication_modal.css?v=cdf20535" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=e2bc6eb2" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_carousel.css?v=4219f3fe" />
+    <link rel="stylesheet" type="text/css" href="_static/css/main.css?v=330958f6" />
+    <link rel="stylesheet" type="text/css" href="_static/css/responsive.css?v=a3e9c1c9" />
     <link rel="stylesheet" type="text/css" href="_static/css/publication_modal.css?v=ecef1c10" />
+    <link rel="stylesheet" type="text/css" href="_static/css/style.css?v=0b8580f3" />
     <link rel="stylesheet" type="text/css" href="_static/css/publication_card.css?v=ed99ed3c" />
     <link rel="stylesheet" type="text/css" href="_static/css/header.css?v=f019e535" />
-    <link rel="stylesheet" type="text/css" href="_static/css/main.css?v=330958f6" />
-    <link rel="stylesheet" type="text/css" href="_static/css/style.css?v=0b8580f3" />
-    <link rel="stylesheet" type="text/css" href="_static/css/responsive.css?v=a3e9c1c9" />
-    <link rel="stylesheet" type="text/css" href="_static/css/team_card.css?v=b19c2a7b" />
     <link rel="stylesheet" type="text/css" href="_static/css/team_modal.css?v=333e86c1" />
+    <link rel="stylesheet" type="text/css" href="_static/css/team_card.css?v=b19c2a7b" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -64,42 +67,30 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-XXXXXXXXXX');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-XXXXXXXXXX');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'research';</script>
-    <script src="_static/lastest_news_embed.js?v=ff75844a"></script>
-    <script src="_static/news_data.js?v=ecc679fc"></script>
-    <script src="_static/publication_modal.js?v=e7bc810e"></script>
-    <script src="_static/publications_carousel.js?v=e74c6f3e"></script>
-    <script src="_static/news_filter.js?v=1a9a3945"></script>
+    <script src="_static/lastest_news_embed.js?v=3bff3666"></script>
     <script src="_static/custom_carousel.js?v=a2613bd1"></script>
-    <link rel="canonical" href="https://brightlab.github.io/nom-du-repo/research.html" />
+    <script src="_static/news_data.js?v=ecc679fc"></script>
+    <script src="_static/publications_carousel.js?v=e74c6f3e"></script>
+    <script src="_static/publication_modal.js?v=e7bc810e"></script>
+    <script src="_static/news_filter.js?v=1a9a3945"></script>
+    <script src="_static/custom_light.js?v=cf2dbcd8"></script>
+    <script src="_static/js/team_data.js?v=dc22e178"></script>
+    <script src="_static/js/render_team.js?v=11f9050b"></script>
     <link rel="icon" href="_static/logo.png"/>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Publications" href="publications.html" />
-    <link rel="prev" title="BRIGHT | Brain Research using Imaging Genetics in Human Transdiagnostically" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
 
   
   
@@ -156,6 +147,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -181,8 +174,6 @@
   
   
     
-    
-      
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt="BRIGHT Lab - Home"/>
@@ -211,8 +202,14 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Research</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Research focus</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="research_psychiatry.html">Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research_neuroimaging.html">Harmonizing Analytical Methods in Functional Neuroimaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research_anorexia.html">Brain Trajectories and Prognosis in Anorexia Nervosa</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="team.html">Team</a></li>
 <li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
@@ -342,9 +339,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -355,21 +350,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>RESEARCH FOCUS</h1>
+    <h1>Research focus</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toward-a-dimensional-classification-of-neurodevelopmental-and-psychiatric-conditions-using-imaging-and-genetics">Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#harmonizing-analytical-methods-in-functional-neuroimaging">Harmonizing Analytical Methods in Functional Neuroimaging</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brain-trajectories-and-prognosis-in-anorexia-nervosa">Brain Trajectories and Prognosis in Anorexia Nervosa</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -380,30 +365,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="research-focus">
-<h1>RESEARCH FOCUS<a class="headerlink" href="#research-focus" title="Link to this heading">#</a></h1>
-<hr class="docutils" />
-<section id="toward-a-dimensional-classification-of-neurodevelopmental-and-psychiatric-conditions-using-imaging-and-genetics">
-<h2>Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics<a class="headerlink" href="#toward-a-dimensional-classification-of-neurodevelopmental-and-psychiatric-conditions-using-imaging-and-genetics" title="Link to this heading">#</a></h2>
-<p><img alt="fMRI" src="_images/top_down.jpeg" /></p>
-<p>Psychiatric research has traditionally relied on a top-down approach - comparing clinically defined diagnostic groups to controls - to identify biomarkers. However, this strategy has often produced inconsistent and non-replicable findings, largely due to the substantial heterogeneity within diagnostic categories. In clinical practice, comorbidities are the norm (e.g., ADHD frequently co-occurs with autism spectrum disorder), and clinical profiles vary widely. These challenges likely reflect the complex genetic architecture of psychiatric disorders, including pleiotropy (shared genetic variants across conditions) and polygenicity (many variants contributing to a single disorder). These observations underscore the need to rethink psychiatric nosology by shifting toward biologically grounded, dimensional approaches rather than categorical symptom-based classifications.</p>
-<p>Our lab adopts a bottom-up approach, starting from genetic variants associated with psychiatric conditions to investigate their impact on brain-based endophenotypes. The goal is to identify biologically meaningful dimensions that transcend traditional diagnostic boundaries. This strategy has already revealed shared functional brain alterations across psychiatric disorders—for example, thalamo-sensorimotor hyperconnectivity observed in autism, schizophrenia, and obsessive-compulsive disorder. We are currently extending this work to examine how genetic risk variants shape early brain development (e.g., in infants) and how polygenic scores influence multimodal neuroimaging and EEG features in children.</p>
-<p>In parallel, we also adopt a top-down, large-scale transdiagnostic perspective through international initiatives such as ENIGMA, particularly in functional neuroimaging studies aimed at identifying brain-based dimensions that cut across psychiatric and neurodevelopmental conditions.</p>
-</section>
-<hr class="docutils" />
-<section id="harmonizing-analytical-methods-in-functional-neuroimaging">
-<h2>Harmonizing Analytical Methods in Functional Neuroimaging<a class="headerlink" href="#harmonizing-analytical-methods-in-functional-neuroimaging" title="Link to this heading">#</a></h2>
-<p><img alt="Brain" src="_images/halfpipe.png" /></p>
-<p>Over the past decade, functional neuroimaging studies in psychiatry have faced a major challenge: poor reproducibility. This instability is largely driven by two factors: the heterogeneity of psychiatric diagnoses and the variability of data analysis pipelines across research teams, which can significantly alter results.</p>
-<p>Our lab co-leads the ENIGMA-rsfMRI working group, which focuses on harmonizing analysis pipelines for resting-state functional MRI (rs-fMRI). We develop multiverse approaches that systematically test the impact of methodological choices, such as denoising strategies, on study outcomes. This work is critical for ensuring the robustness, comparability, and translational potential of large-scale neuroimaging findings, paving the way for more reliable clinical applications in psychiatry and neurology.</p>
-</section>
-<hr class="docutils" />
-<section id="brain-trajectories-and-prognosis-in-anorexia-nervosa">
-<h2>Brain Trajectories and Prognosis in Anorexia Nervosa<a class="headerlink" href="#brain-trajectories-and-prognosis-in-anorexia-nervosa" title="Link to this heading">#</a></h2>
-<p><img alt="Anorexia" src="_images/anorexia.webp" /></p>
-<p>Anorexia nervosa is associated with one of the highest mortality rates among all psychiatric illnesses. This elevated risk stems from a combination of medical complications due to prolonged malnutrition and suicide, with mortality increasing by approximately 5% for each decade of illness. Typically emerging during adolescence, anorexia is characterized by severe and persistent dietary restriction, low body weight, and distorted body image. Relapse is common after weight restoration, with only ~60% of patients achieving sustained remission. Despite the severity of this condition, the neurobiological mechanisms underlying relapse and treatment response remain poorly understood.</p>
-<p>To address this gap, we are conducting a longitudinal study at CHU Sainte-Justine, following a cohort of patients aged 9 to 16 years at various stages of clinical care and post-hospitalization. At each time point, we collect multimodal brain imaging, along with clinical and cognitive assessments.</p>
-<p>Our goal is to develop predictive tools for relapse risk by examining brain recovery status after weight restoration, combined with clinical markers. Identifying early indicators of relapse could enable more personalized interventions and help prevent the transition to chronic illness. This project is part of a larger international effort that our lab co-leads through the ENIGMA Eating Disorders Working Group, which brings together over 20 research sites worldwide. Beyond its clinical implications, this study provides a unique opportunity to investigate brain plasticity and adaptation mechanisms in the context of prolonged malnutrition.</p>
-</section>
+<h1>Research focus<a class="headerlink" href="#research-focus" title="Link to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -436,47 +398,12 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">BRIGHT | Brain Research using Imaging Genetics in Human Transdiagnostically</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="publications.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Publications</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toward-a-dimensional-classification-of-neurodevelopmental-and-psychiatric-conditions-using-imaging-and-genetics">Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#harmonizing-analytical-methods-in-functional-neuroimaging">Harmonizing Analytical Methods in Functional Neuroimaging</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brain-trajectories-and-prognosis-in-anorexia-nervosa">Brain Trajectories and Prognosis in Anorexia Nervosa</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

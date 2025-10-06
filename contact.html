@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
@@ -13,8 +13,8 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
@@ -28,24 +28,27 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom_carousel.css?v=4219f3fe" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_font.css?v=cf2e60c3" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_light.css?v=cff7a068" />
+    <link rel="stylesheet" type="text/css" href="_static/team.css?v=15a24403" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=0d4a4c04" />
     <link rel="stylesheet" type="text/css" href="_static/publication_modal.css?v=cdf20535" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=e2bc6eb2" />
+    <link rel="stylesheet" type="text/css" href="_static/custom_carousel.css?v=4219f3fe" />
+    <link rel="stylesheet" type="text/css" href="_static/css/main.css?v=330958f6" />
+    <link rel="stylesheet" type="text/css" href="_static/css/responsive.css?v=a3e9c1c9" />
     <link rel="stylesheet" type="text/css" href="_static/css/publication_modal.css?v=ecef1c10" />
+    <link rel="stylesheet" type="text/css" href="_static/css/style.css?v=0b8580f3" />
     <link rel="stylesheet" type="text/css" href="_static/css/publication_card.css?v=ed99ed3c" />
     <link rel="stylesheet" type="text/css" href="_static/css/header.css?v=f019e535" />
-    <link rel="stylesheet" type="text/css" href="_static/css/main.css?v=330958f6" />
-    <link rel="stylesheet" type="text/css" href="_static/css/style.css?v=0b8580f3" />
-    <link rel="stylesheet" type="text/css" href="_static/css/responsive.css?v=a3e9c1c9" />
-    <link rel="stylesheet" type="text/css" href="_static/css/team_card.css?v=b19c2a7b" />
     <link rel="stylesheet" type="text/css" href="_static/css/team_modal.css?v=333e86c1" />
+    <link rel="stylesheet" type="text/css" href="_static/css/team_card.css?v=b19c2a7b" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -64,32 +67,22 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-XXXXXXXXXX');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-XXXXXXXXXX');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contact';</script>
-    <script src="_static/lastest_news_embed.js?v=ff75844a"></script>
-    <script src="_static/news_data.js?v=ecc679fc"></script>
-    <script src="_static/publication_modal.js?v=e7bc810e"></script>
-    <script src="_static/publications_carousel.js?v=e74c6f3e"></script>
-    <script src="_static/news_filter.js?v=1a9a3945"></script>
+    <script src="_static/lastest_news_embed.js?v=3bff3666"></script>
     <script src="_static/custom_carousel.js?v=a2613bd1"></script>
-    <link rel="canonical" href="https://brightlab.github.io/nom-du-repo/contact.html" />
+    <script src="_static/news_data.js?v=ecc679fc"></script>
+    <script src="_static/publications_carousel.js?v=e74c6f3e"></script>
+    <script src="_static/publication_modal.js?v=e7bc810e"></script>
+    <script src="_static/news_filter.js?v=1a9a3945"></script>
+    <script src="_static/custom_light.js?v=cf2dbcd8"></script>
+    <script src="_static/js/team_data.js?v=dc22e178"></script>
+    <script src="_static/js/render_team.js?v=11f9050b"></script>
     <link rel="icon" href="_static/logo.png"/>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="News" href="news.html" />
@@ -98,7 +91,7 @@
   </head>
   
   
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
 
   
   
@@ -181,8 +174,6 @@
   
     
     
-      
-    
     
     <img src="_static/logo.png" class="logo__image only-light" alt="BRIGHT Lab - Home"/>
     <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="BRIGHT Lab - Home"/>`);</script>
@@ -210,8 +201,14 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Research focus</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="research_psychiatry.html">Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research_neuroimaging.html">Harmonizing Analytical Methods in Functional Neuroimaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research_anorexia.html">Brain Trajectories and Prognosis in Anorexia Nervosa</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="team.html">Team</a></li>
 <li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>

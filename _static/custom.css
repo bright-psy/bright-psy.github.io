@@ -220,9 +220,9 @@ div.cell div.inner_cell {
     align-items: center;
   }
   .news-image-container {
-    width: 100%;                /* occupe tout l’espace horizontal */
-    max-width: 250px;           /* mais ne dépasse pas la taille standard */
-    aspect-ratio: 1 / 1;        /* carré constant */
-    margin: 1rem auto 0;        /* centré sous le texte */
+    width: 100%;              
+    max-width: 250px;         
+    aspect-ratio: 1 / 1;        
+    margin: 1rem auto 0;        
   }
 }
