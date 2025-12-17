@@ -1,10 +1,31 @@
 const NEWS_DATA = [
+    {
+    topic: "talks",
+    date: "2025-12-03",
+    title: "Clara Moreau gave a presentation to the assembly of the Faculty of Medicine at the University of Montreal.",
+    description: ``,
+    image: [
+      "_static/images/moreau_presentation_2025-12.jpg",
+    ]
+  },    
+  {
+    topic: "collaborations",
+    date: "2025-12-03",
+    title: "Clara El Khantour visited the lab of Dr. Stefan Ehrlich in Dresden, Germany",
+    description: `Clara El Khantour had the opportunity to visit Dr. Stefan Ehrlich's lab at the Technische Universität Dresden. During her visit, she had the opportunity to present the ongoing ENIGMA-Anorexia Nervosa research projects. 
+    She also engaged in fruitful discussions regarding collaborative projects focusing on eating disorders and neuroimaging.`,
+    image: [
+      "_static/images/dresden_2025.png"
+    ]
+  },  
   {
     topic: "members",
     date: "2025-10-24",
     title: "Two visiting PhD students join the lab!",
     description: `We are excited to welcome Anaël Ayrolles from Robert-Debré University Hospital and Léa Waller from Charité - Universitätsmedizin Berlin to our team as visiting PhD students for 3 months. Welcome aboard!`,
-    image: "_static/images/leanael.png"
+   image: [
+      "_static/images/leanael.png"
+    ]
   },  
   {
     topic: "projects",

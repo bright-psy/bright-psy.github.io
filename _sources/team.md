@@ -14,7 +14,7 @@ kernelspec:
 
 ## Members
 
-![Team](_static/images/the_team.jpeg)
+![Team](_static/images/the_team_2025.jpeg)
 
 ```{raw} html
 <div id="team-root"></div>
